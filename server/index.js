@@ -2,6 +2,7 @@
 
 const express = require('express');
 const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
 
 // IMPORTS FROM OTHER FILES
     const authRouter = require('./routes/auth');
@@ -26,10 +27,10 @@ mongoose.connect(DB).then(()=> {
  
 
 
-app.listen(PORT, function () {
+app.listen(PORT, "0.0.0.0", function () {
     console.log(`Connected at port ${PORT}`);
 });
 
-//2:04:20
+//2:34:56
 
 
