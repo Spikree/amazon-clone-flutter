@@ -43,6 +43,8 @@ class _AuthScreenState extends State<AuthScreen> {
         name: _nameController.text);
   }
 
+  Color myColor = const Color(0xFF2196F3);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
